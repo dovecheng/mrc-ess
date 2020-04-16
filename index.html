@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>demo</title>
+  <script type="application/javascript">
+    window.onload = function(){
+      let btn = document.querySelector('#btn');
+      btn.onclick = function(){
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST','https://discount.kaifa000.com/discount.web/wp/login');
+        let data = {
+          "sloginname": "daveleenewlife@gmail.com",
+          "spassword": "Mrc123456"
+        };
+        xhr.send(JSON.stringify(data));
+      }
+    }
+  </script>
+</head>
+<body>
+<button id="btn">hello</button>
+</body>
+</html>
